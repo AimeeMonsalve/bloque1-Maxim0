@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chanllenge2 Movie</title>
+</head>
+<body>
+    <script>
+        /*7.	[Movie]
+Se ingresan por teclado 4 números, si todos los valores ingresados son menores a 23, 
+imprimir en la página ‘Todos los números son menores al número establecido. 
+*/
+
+ const num = [];
+ let a = 0;
+for (let i = 0; i< 4; i++) {
+    const numero = parseInt(prompt(`Ingresar numero ${i +1}`));
+    num.push(numero);
+    };
+    console.log (num);
+while (num[a] <23 && a< num.length){
+        if (a === 3) {
+            document.write(`Todos los números son menores al número establecido.`);
+        };
+     a++;
+};
+console.log(a);
+    
+    </script>
+    
+</body>
+</html>

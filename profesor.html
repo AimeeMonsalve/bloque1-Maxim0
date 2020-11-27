@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge2 Profesor </title>
+</head>
+<body>
+    <script>
+        /*5.	[ElProfesor]
+Confeccionar un programa que permita al usuario ingresar 2 notas y calcular:
+a.	Suma total
+b.	Promedio
+c.	Nota máxima
+*/
+
+const nota1 =parseFloat(prompt( `Ingresar la nota 1 `));
+const nota2 = parseFloat(prompt(`Ingresar la nota 2 `) );
+ const sumaT = nota1 + nota2;
+ const prom = sumaT/ 2;
+ if (nota1 > nota2) {
+     document.write(`La suma total es: ${sumaT} <br> El promedio es: ${prom} <br> La Nota máxima es: ${nota1}`);
+ }
+ else 
+ document.write(`La suma total es: ${sumaT} <br> El promedio es: ${prom} <br> La Nota máxima es: ${nota2}`);
+
+    </script>
+    
+</body>
+</html>
