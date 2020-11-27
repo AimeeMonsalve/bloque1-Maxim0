@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Fabrica</title>
+</head>
+<body>
+    <script>
+        /*10.	[LaFabrica]
+En una empresa trabajan 5 empleados cuyos sueldos oscilan 
+entre $100 y $500, realizar un programa que lea los sueldos 
+que cobra cada empleado e informe cuántos empleados cobran 
+entre $100 y $300 y cuántos cobran más de $300. Además el
+ programa deberá informar el importe que gasta la empresa 
+ en sueldos al personal (grupo)
+*/
+let empleados= 0;
+let emplmenos =0;
+let empmas = 0;
+for (let i=0; i< 5; i++){
+ let sueldo = parseFloat(prompt("Ingresar sueldo a cobrar por empleado"));
+    empleados= empleados + sueldo;
+    (sueldo >= 100 && sueldo <= 300) ? emplmenos++ : empmas++;
+    };
+
+    document.write (`<br>  ${emplmenos} empleados cobran entre $100 y $300.  `);
+    document.write (`<br>  ${empmas} cobran más de $300. `);
+    document.write (`<br> $ ${empleados} Es el importe que gasta la empresa en sueldos al personal.`);
+ 
+  </script>
+    
+</body>
+</html>
